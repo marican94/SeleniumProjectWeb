@@ -26,6 +26,12 @@ public class PositiveLoginTests {
         WebElement submitButton = driver.findElement(By.id("submit"));
         submitButton.click();
 
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         //Verify new page URL contains practicetestautomation.com/logged-in-successfully/
         String expectedUrl = "https://practicetestautomation.com/logged-in-successfully/";
         String actualUrl = driver.getCurrentUrl();
