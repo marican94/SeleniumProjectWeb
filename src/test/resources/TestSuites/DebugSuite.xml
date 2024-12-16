@@ -5,7 +5,7 @@
         <classes>
             <class name="com.practicetestautomation.tests.exceptions.ExceptionsTests">
                 <methods>
-                    <include name="noSuchElementExceptionTest"/>
+                    <include name="elementNotInteractableExceptionTest"/>
                 </methods>
             </class>
         </classes>
