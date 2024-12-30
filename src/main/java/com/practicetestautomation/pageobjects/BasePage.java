@@ -18,6 +18,10 @@ public class BasePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    protected void visit(String url){
+        driver.get(url);
+    }
+
     public String getCurrentUrl(){
         return driver.getCurrentUrl();
     }
